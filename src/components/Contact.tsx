@@ -12,7 +12,7 @@ export const ContactUs = () => {
   const form =
     useRef<HTMLFormElement>() as React.MutableRefObject<HTMLFormElement>;
 
-  const sendEmail = (e) => {
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     emailjs
@@ -28,7 +28,7 @@ export const ContactUs = () => {
           console.log("Error", error);
         }
       );
-    e.target.reset();
+    // e.target.reset();
   };
 
   return (
