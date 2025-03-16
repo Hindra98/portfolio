@@ -1,0 +1,3 @@
+import { PUBLIC_KEY, SERVICE_ID, TEMPLATE_ID } from "./email"
+
+export {SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY}
