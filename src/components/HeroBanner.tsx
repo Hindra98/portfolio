@@ -20,7 +20,6 @@ const HeroBanner: React.FC = () => {
 
   return (
     <section id="about" className="relative flex gap-10 items-center justify-between w-full overflow-hidden h-[calc(100vh-100px)]">
-      {/* <section className="relative flex items-center justify-between w-full bg-gradient-to-r from-gray-100 via-gray-300 to-gray-100 dark:from-gray-900 dark:via-gray-600 dark:to-gray-900"> */}
       <div className="absolute top-0 left-0 w-full h-full opacity-10 z-0">
         <img src={bg} className="w-full h-full hidden dark:block opacity-50" />
         <img src={bg2} className="w-full h-full dark:hidden" />
@@ -43,7 +42,7 @@ const HeroBanner: React.FC = () => {
             />
           </div>
         </div>
-        <p className="text-lg md:text-xl w-2/3 opacity-75">
+        <p className="text-lg xmd:mx-0 xs:mx-auto w-2/3 opacity-75 text-justify">
           {t("bannerDescription")}
         </p>
 
