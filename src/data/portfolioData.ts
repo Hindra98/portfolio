@@ -242,8 +242,8 @@ export const contactInfo: ContactItem[] = [
     isPrimary: true,
     iconcss: "location-6icon-",
     title: "Location",
-    value: "Japoma Nyalla, Douala",
-    url: "https://maps.google.com/",
+    value: "Douala, Cameroun",
+    url: "https://www.google.com/maps/?q=Douala,%20Cameroun",
     desciption:"Me retrouver directement devant ma machine",
   },
   {
