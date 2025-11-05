@@ -2,7 +2,6 @@ import * as React from "react";
 import { ExperienceItem } from "../types";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-// import Image from "next/image";
 
 interface ExperienceCardProps {
   experience: ExperienceItem;
@@ -10,6 +9,50 @@ interface ExperienceCardProps {
 }
 
 export const ExperienceCard: React.FC<ExperienceCardProps> = ({
+  experience,
+  idx = 0,
+}) => {
+  const { t } = useTranslation();
+  return (
+    <Link
+      to={experience?.url as string}
+      target="_blank"
+      className="flex md:flex-row flex-col md:gap-10 gap-3 items-stretch w-full px-4 py-2 rounded-sm max-w-[850px] hover:bg-gray-200 hover:dark:bg-gray-800 hover:shadow-lg shadow dark:shadow-white/10"
+    >
+      <div className="flex md:flex-col flex-row items-center gap-3 md:w-1/2 w-full justify-between">
+        <time className="p-1">{t("period" + idx?.toString())}</time>
+        <img
+          className={`object-contain w-full h-full max-h-32 hidden md:block`}
+          src={experience?.picture}
+          alt={t("company" + idx?.toString())}
+        />
+        <h5 className="text-lg font-medium tracking-tight italic text-gray-900 dark:text-gray-300 text-opacity-50">
+          {t("company" + idx?.toString())}
+        </h5>
+      </div>
+      <div className="flex flex-col gap-3 w-full justify-between">
+        <h1 className="text-lg font-bold text-gray-900 dark:text-white">
+          {t("role" + idx?.toString())}
+        </h1>
+        <p className="font-medium text-justify text-base leading-normal text-gray-700 dark:text-gray-200 line-clamp-5">
+          {t("description" + idx?.toString())}
+        </p>
+        <ul className="flex items-center justify-center flex-wrap gap-2">
+          {experience?.skills?.map((skill, idx) => (
+            <li
+              key={idx}
+              className="py-1 px-2 dark:bg-gray-700 bg-gray-300 text-sm rounded-xl"
+            >
+              {skill}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </Link>
+  );
+};
+
+export const ExperienceCard2: React.FC<ExperienceCardProps> = ({
   experience,
   idx = 0,
 }) => {

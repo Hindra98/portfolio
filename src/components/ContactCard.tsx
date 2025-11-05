@@ -53,14 +53,12 @@ export const ContactCard: React.FC<ContactCardProps> = ({ contact }) => {
   return (
     <Link
       to={contact?.url || "#"}
-      title={contact.desciption}
+      title={contact.description}
       target="_blank"
       rel="noopener noreferrer"
       className={`group relative flex items-center justify-between p-4 rounded-lg 
              bg-white/5 border border-black/10 dark:border-white/10 overflow-hidden
-             hover:border-black/20 dark:hover:border-white/20 ${
-               contact?.isPrimary && "sm:col-span-2"
-             } `}
+             hover:border-black/20 dark:hover:border-white/20`}
     >
       {/* Hover Gradient Background */}
       <div
@@ -94,6 +92,8 @@ export const ContactCard: React.FC<ContactCardProps> = ({ contact }) => {
               ? t("email")
               : contact.title?.toLowerCase()?.startsWith("phone")
               ? t("phone")
+              : contact.title?.toLowerCase()?.startsWith("whatsapp")
+              ? t("whatsapp")
               : contact.title?.toLowerCase()?.startsWith("phone2")
               ? t("phone2")
               : contact.title?.toLowerCase()?.startsWith("location")

@@ -1,18 +1,22 @@
+
 export interface ExperienceItem {
   role: string;
   company: string;
-  description: string;
+  description: React.ReactNode;
   period: string;
   picture: string;
   url?: string;
+  skills?: string[];
 }
 export interface PersonnalProjectItem {
   name: string;
-  company: string;
+  labelTitle?: string;
   description: string;
-  period: string;
+  logo?: string;
+  logoName?: string;
   picture?: string;
   url?: string;
+  color?: string;
 }
 
 export interface SkillItem {
@@ -31,5 +35,5 @@ export interface ContactItem {
   iconcss?: string;
   gradient?: string;
   color?: string;
-  desciption?: string
+  description?: string
 }

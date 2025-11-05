@@ -5,6 +5,7 @@ import { ContactUs } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import { Experience } from "./components/Experience";
 import { Skill } from "./components/Skill";
+import { PersonnalProject } from "./components/PersonnalProject";
 
 export const Portfolio: React.FC = () => {
   return (
@@ -14,6 +15,7 @@ export const Portfolio: React.FC = () => {
         <HeroBanner />
         <Experience />
         <Skill />
+        <PersonnalProject />
         <ContactUs />
       </main>
       <Footer />

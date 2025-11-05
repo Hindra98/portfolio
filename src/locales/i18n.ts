@@ -86,6 +86,7 @@ const resources = {
       // Contact
       email: "Email",
       phone: "Phone",
+      whatsapp: "Whatsapp",
       location: "Location",
       github: "Github",
       linkedin: "Linkedin",
@@ -153,7 +154,8 @@ const resources = {
       descriptionXP: "Ces expériences m'ont permis de développer une expertise dans la création de solutions digitales performantes, tout en améliorant mes compétences.",
       role0: "Dévélopeur ReactJS",
       company0: "Nextget Consulting",
-      description0: "Mise en place d’un planificateur de voyages; maintenance, revue de code et mise en place des bonnes pratiques avec l’utilisation de design pattern; Suivi de stagiaires.",
+      // description0: "Mise en place d’un planificateur de voyages; maintenance, revue de code et mise en place des bonnes pratiques avec l’utilisation de design pattern; Suivi de stagiaires.",
+      description0: "*Architecture Front-end Complexe : Conception et modélisation complètes de l'application OctopusFX, notamment un planificateur de voyages sophistiqué, en utilisant TypeScript pour la robustesse et Redux pour une gestion d'état prédictive. * Qualité du Code et Maintenabilité : Mise en place des meilleures pratiques (clean code et design patterns) à travers des revues de code systématiques, améliorant significativement la qualité et la performance du Front-end. * Intégration et Déploiement Continu : Contribution active à la gestion des branches et à l'optimisation des pipelines CI/CD sur Azure DevOps, assurant des cycles de déploiement rapides et fiables. * Leadership Technique : Encadrement et mentorat technique de stagiaires, contribuant à l'amélioration de l'efficacité globale de l'équipe de développement",
       period0: "Février 2024 à Février 2025",
 
       role1: "Dévélopeur Front End",
@@ -163,7 +165,8 @@ const resources = {
 
       role2: "Formateur développement web",
       company2: "IFPIA (Institut de Formation Professionnelle Internationale Algorithme)",
-      description2: "Conception et implémentation des plateformes web avec ReactJS, NodeJS, PHP, Firebase",
+      // description2: "Conception et implémentation des plateformes web avec ReactJS, NodeJS, PHP, Firebase",
+      description2: "Conception Full-Stack : Implémentation de plateformes web complètes depuis le cahier des charges jusqu'au déploiement, utilisant Symfony et NodeJS pour structurer des API RESTful performantes. * Gestion de Bases de Données : Expertise dans l'administration et l'optimisation des systèmes de gestion de bases de données relationnelles (PostgreSQL et MySQL) pour garantir la sécurité et la rapidité des transactions Back-end. * Modélisation et Standardisation : Réalisation de diagrammes UML pour la modélisation précise des systèmes et application de la gestion avancée des dépendances avec npm. * Maîtrise de l'Outillage : Gestion complète des projets et des flux de travail collaboratifs grâce à la maîtrise avancée des branches et des outils Git/GitHub",
       period2: "Octobre 2022 à Mai 2023",
 
       // Skills
@@ -186,6 +189,7 @@ const resources = {
       // Contact
       email: "E-mail",
       phone: "Téléphone",
+      whatsapp: "Whatsapp",
       location: "Adresse",
       github: "Github",
       linkedin: "Linkedin",

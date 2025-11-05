@@ -24,34 +24,49 @@ import {
   typescript,
   wordpress,
 } from "../assets/img/skills/index";
+import hindraAuthLogo from "../assets/img/hindra-auth-logo2.svg";
+import hindraAuthUrl from "../assets/img/hindra-auth.jpg";
+import hindraExchangeLogo from "../assets/img/hindra-auth-logo2.svg";
+import hindraExchangeUrl from "../assets/img/hindra-auth.jpg";
+import mypageLogo from "../assets/img/my-page-logo.jpeg";
+import mypageUrl from "../assets/img/my-page.jpg";
 
 export const personnalProject: PersonnalProjectItem[] = [
   {
-    name: "Mendji",
-    company: "Université de Yaoundé",
+    name: "Hindra-auth",
     description:
-      "Implemented a travel planner, conducted code reviews, and mentored trainees.",
-    period: "February 2024 to February 2025",
-    picture: "",
-    url: "https://about.me/nextget-consulting",
+      "Une idée de conception d'application ressemblant à Google",
+    picture: hindraAuthUrl,
+    logo: hindraAuthLogo,logoName:"Hindra-auth",
+    url: "https://hindra-auth.vercel.app/oauth/signin",
+    color:"#1e293b",
   },
   {
-    name: "Front End Developer",
-    company: "Université de Douala",
+    name: "Hindra Exchange",
     description:
-      "Analyzed and designed information systems using micro-service architecture.",
-    period: "October 2023 to January 2024",
-    picture: "",
-    url: "https://business.klapeers.com",
+      "Dans une bataille contre le chômage au Cameroun, les metiers de classes inferieurs à 7 sont souvent lesés pour des metiers de classes superieurs. Ici vous aurez droit à des offres d'emplois dediées uniquement à ceux-ci",
+    picture: hindraExchangeUrl,
+    logo: hindraExchangeLogo,
+    url: "https://hindra-exchange-service.vercel.app/",
+    color:"#1e293b",
   },
   {
-    name: "Web Development Trainer",
-    company: "Université de Douala",
+    name: "My Page",
     description:
-      "Designed and implemented web platforms using various technologies.",
-    period: "October 2022 to May 2023",
+      "Réseau social permettant de partager tes moments de la journées avec tes amies, chatter et faire de nouvelles rencontres.",
+    picture: mypageUrl,
+    logo: mypageLogo,
+    url: "https://first-page-hindra.vercel.app/",
+    color:"#1e293b",
+  },
+  {
+    name: "Afrochic",
+    description:
+      "Boutique de vente de vêtements africains 'Afritude' en ligne avec des points de retrait en Europe et en Amerique.",
     picture: "",
+    logo: "",
     url: "https://ifpia.xyz",
+    color:"#1e293b",
   },
 ];
 
@@ -65,6 +80,17 @@ export const experiences: ExperienceItem[] = [
     picture:
       "https://media.licdn.com/dms/image/v2/C560BAQEDNJhTR3S1SA/company-logo_200_200/company-logo_200_200/0/1649600218467/innovative_tech_solutions_sarl_logo?e=2147483647&v=beta&t=AQoAbLIpf3nL35szD9kN1BMlTbiIhSBgECQ_gBQsAYk",
     url: "https://about.me/nextget-consulting",
+    skills: [
+      "ReactJS",
+      "JavaScript",
+      "TypeScript",
+      "TailwindCSS",
+      "Syncfusion",
+      "Redux",
+      "Axios",
+      "Git",
+      "Azure DevOps",
+    ],
   },
   {
     role: "Front End Developer",
@@ -75,6 +101,14 @@ export const experiences: ExperienceItem[] = [
     picture:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5DnG_2lelPHmsuTIXRmm5VvMfhfOJg81vHcdY3R7_apsXKe0Q-m0SgKIWDTIPcsuTmyY&usqp=CAU",
     url: "https://business.klapeers.com",
+    skills: [
+      "ReactJS",
+      "JavaScript",
+      "TypeScript",
+      "TailwindCSS",
+      "Redux",
+      "Axios",
+    ],
   },
   {
     role: "Web Development Trainer",
@@ -84,6 +118,17 @@ export const experiences: ExperienceItem[] = [
     period: "October 2022 to May 2023",
     picture: "https://ifpia.xyz/logo512.png",
     url: "https://ifpia.xyz",
+    skills: [
+      "ReactJS",
+      "JavaScript",
+      "NodeJS",
+      "PHP",
+      "Symfony",
+      "Firebase",
+      "Axios",
+      "Git/Github",
+      "Bootstrap",
+    ],
   },
 ];
 
@@ -222,11 +267,20 @@ export const contactInfo: ContactItem[] = [
   {
     icon: "",
     isPrimary: true,
+    iconcss: "location-6icon-",
+    title: "Location",
+    value: "Douala, Cameroun",
+    url: "https://www.google.com/maps/?q=Douala,%20Cameroun",
+    description: "Me retrouver directement devant ma machine",
+  },
+  {
+    icon: "",
+    isPrimary: true,
     iconcss: "mail-alticon-",
     title: "Email",
     value: "vadinyfotsing@gmail.com",
     url: "mailto:vadinyfotsing@gmail.com",
-    desciption:"Laisser moi un mail et je vous repondrai dans de brefs delais",
+    description: "Laisser moi un mail et je vous repondrai dans de brefs delais",
   },
   {
     icon: "",
@@ -235,16 +289,18 @@ export const contactInfo: ContactItem[] = [
     title: "Phone",
     value: "+237 655 39 47 65",
     url: "tel:+237655394765",
-    desciption:"Contacter moi directement par appels",
+    description: "Contacter moi directement par appel",
   },
   {
     icon: "",
     isPrimary: true,
-    iconcss: "location-6icon-",
-    title: "Location",
-    value: "Douala, Cameroun",
-    url: "https://www.google.com/maps/?q=Douala,%20Cameroun",
-    desciption:"Me retrouver directement devant ma machine",
+    iconcss: "whatsappicon-",
+    title: "Whatsapp",
+    color: "#0AC266",
+    gradient: "from-[#0AC266] to-[#00B577]",
+    value: "+237 655 39 47 65",
+    url: "https://wa.me/+237655394765",
+    description: "Laissez moi un message whatsapp",
   },
   {
     icon: "",
@@ -254,7 +310,7 @@ export const contactInfo: ContactItem[] = [
     gradient: "from-[#0A66C2] to-[#0077B5]",
     value: "@VadinyFotsing",
     url: "https://linkedin.com/in/vadinyfotsing",
-    desciption:"Mon profil linkedin",
+    description: "Mon profil linkedin",
   },
   {
     icon: "",
@@ -264,26 +320,26 @@ export const contactInfo: ContactItem[] = [
     gradient: "from-[#333] to-[#24292e]",
     value: "@hindra98",
     url: "https://github.com/hindra98/",
-    desciption:"Ma page Github",
+    description: "Ma page Github",
   },
-  {
-    icon: "",
-    iconcss: "twitter-5icon-",
-    title: "Twitter",
-    color: "#0A66C2",
-    gradient: "from-[#0A66C2] to-[#0077B5]",
-    value: "@VadinyFotsing",
-    url: "https://x.com/vadinyfotsing",
-    desciption:"Ma page twitter",
-  },
-  {
-    icon: "",
-    iconcss: "instagramicon-",
-    title: "Instagram",
-    color: "#E4405F",
-    gradient: "from-[#833AB4] via-[#E4405F] to-[#FCAF45]",
-    value: "@VadinyFotsing",
-    url: "https://instagram.com/vadinyfotsing",
-    desciption:"Mon insta",
-  },
+  // {
+  //   icon: "",
+  //   iconcss: "twitter-5icon-",
+  //   title: "Twitter",
+  //   color: "#0A66C2",
+  //   gradient: "from-[#0A66C2] to-[#0077B5]",
+  //   value: "@VadinyFotsing",
+  //   url: "https://x.com/vadinyfotsing",
+  //   description: "Ma page twitter",
+  // },
+  // {
+  //   icon: "",
+  //   iconcss: "instagramicon-",
+  //   title: "Instagram",
+  //   color: "#E4405F",
+  //   gradient: "from-[#833AB4] via-[#E4405F] to-[#FCAF45]",
+  //   value: "@VadinyFotsing",
+  //   url: "https://instagram.com/vadinyfotsing",
+  //   description: "Mon insta",
+  // },
 ];
