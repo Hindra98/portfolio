@@ -7,6 +7,7 @@ import {
   createRoutesFromElements,
   Route,
 } from "react-router-dom";
+import PageNotFound from "./pages/page-not-found";
 
 export const App: React.FC = () => {
   return (
@@ -22,6 +23,7 @@ export const router = createBrowserRouter(
   createRoutesFromElements(
     <>
       <Route index element={<App />} />
+        <Route path="*" element={<PageNotFound />} />
     </>
   )
 );

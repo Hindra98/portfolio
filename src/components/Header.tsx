@@ -55,7 +55,7 @@ export const Header: React.FC = () => {
         <Navbar.Toggle />
       </div>
       <Navbar.Collapse>
-        {["Home", "About", "Experience", "Skills", "Contact"].map(
+        {["Home", "About", "Experience", "Projects", "Contact"].map(
           (item, idx) => (
             <Navbar.Link
               href={`#${item.toLowerCase()}`}

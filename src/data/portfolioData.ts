@@ -27,7 +27,7 @@ import {
 import hindraAuthLogo from "../assets/img/hindra-auth-logo2.svg";
 import hindraAuthUrl from "../assets/img/hindra-auth.jpg";
 import hindraExchangeLogo from "../assets/img/hindra-auth-logo2.svg";
-import hindraExchangeUrl from "../assets/img/hindra-auth.jpg";
+import hindraExchangeUrl from "../assets/img/hindra-exchange.jpg";
 import mypageLogo from "../assets/img/my-page-logo.jpeg";
 import mypageUrl from "../assets/img/my-page.jpg";
 
