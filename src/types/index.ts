@@ -1,4 +1,3 @@
-
 export interface ExperienceItem {
   role: string;
   company: string;
@@ -17,6 +16,12 @@ export interface PersonnalProjectItem {
   picture?: string;
   url?: string;
   color?: string;
+  isArchived?: boolean;
+}
+
+export interface ComponentItem {
+  name: string;
+  children: React.ReactNode;
 }
 
 export interface SkillItem {
@@ -35,5 +40,5 @@ export interface ContactItem {
   iconcss?: string;
   gradient?: string;
   color?: string;
-  description?: string
+  description?: string;
 }

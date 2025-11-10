@@ -1,9 +1,10 @@
+import * as React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import error from "../assets/img/404_1000.png";
 import { useTranslation } from "react-i18next";
 
-const PageNotFound = () => {
+const PageNotFound: React.FC = () => {
   const { t } = useTranslation();
   return (
     <div className="flex justify-center items-center w-full h-dvh min-h-[490px] px-8">

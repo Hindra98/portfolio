@@ -7,11 +7,15 @@ const LanguageToggle = () => {
   const { t, i18n } = useTranslation();
 
   const [langage, setLangage] = useState<string>(
-    () => localStorage.getItem(PortfolioConstants.USER_LANGUAGE) || "en"
+    () => localStorage.getItem(PortfolioConstants.USER_LANGUAGE) || "fr"
   );
 
   useEffect(() => {
     i18n.changeLanguage(langage);
+    document.documentElement.lang = langage;
+    // window.document.documentElement.lang = langage;
+    
+    console.log(document.documentElement.lang)
     localStorage.setItem(PortfolioConstants.USER_LANGUAGE, langage);
   }, [langage, i18n]);
 

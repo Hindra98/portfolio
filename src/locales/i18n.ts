@@ -1,6 +1,6 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-import LanguageDetector from "i18next-browser-languagedetector";
+import { PortfolioConstants } from "../components/constants";
 
 // Traductions disponibles
 const resources = {
@@ -23,6 +23,7 @@ const resources = {
       skills: "Skills",
       contact: "Contact",
       projects: "Projects",
+      myComponent: "My component",
       fullName: "Vadiny Pherlin Fotsing",
 
       // Banner
@@ -40,19 +41,19 @@ const resources = {
       ppCompany0: "University of Yaoundé",
       ppDescription0:
         "Implemented a travel planner, conducted code reviews, and mentored trainees.",
-      ppPeriod0: "February 2024 to February 2025",
+      ppPeriod0: "Feb 2024 - Feb 2025",
 
       name1: "Front End Developer",
       ppCompany1: "University of Douala",
       ppDescription1:
         "Analyzed and designed information systems using micro-service architecture.",
-      ppPeriod1: "October 2023 to January 2024",
+      ppPeriod1: "Oct 2023 - Jan 2024",
 
       name2: "Web Development Trainer",
       ppCompany2: "University of Douala",
       ppDescription2:
         "Designed and implemented web platforms using various technologies.",
-      ppPeriod2: "October 2022 to May 2023",
+      ppPeriod2: "Oct 2022 - May 2023",
 
       // Experience
       descriptionXP:
@@ -61,20 +62,20 @@ const resources = {
       company0: "Nextget Consulting",
       description0:
         "Implemented a travel planner, conducted code reviews, and mentored trainees.",
-      period0: "February 2024 to February 2025",
+      period0: "Feb 2024 - Nov 2025",
 
       role1: "Front End Developer",
       company1: "Klapeers",
       description1:
         "Analyzed and designed information systems using micro-service architecture.",
-      period1: "October 2023 to January 2024",
+      period1: "Oct 2023 - Jan 2024",
 
       role2: "Web Development Trainer",
       company2:
         "IFPIA (Institute of International Professional Training Algorithm)",
       description2:
         "Designed and implemented web platforms using various technologies.",
-      period2: "October 2022 to May 2023",
+      period2: "Oct 2022 - May 2023",
 
       // Projets personnels
       pname0: "Hindra-auth",
@@ -90,9 +91,23 @@ const resources = {
       pLabelTitle2: "Visit the website",
       pname3: "Afrochic",
       pDescription3:
-        " Shop selling African clothing 'Afritude' online with pick-up points in Europe and America.",
+        "Shop selling African clothing 'Afritude' online with pick-up points in Europe and America.",
       pLabelTitle3: "Visit the website",
+      pname4: "K-Guide",
+      pDescription4:
+        "Information for many organisms of the world with a little filter system.",
+      pLabelTitle4: "Visit the website",
       pLabelTitle: "Visit the website",
+      archive: "Archived",
+
+      // Projets personnels
+      theme: "Theme",
+      toggleOne: "Button permettant de changer le mode en dark and light",
+      toggleTwo: "Switch permettant de changer le mode en dark and light",
+      loaderOne: "Loader permettant de changer le mode en dark and light",
+      loaderTwo: "Loader permettant de changer le mode en dark and light",
+      loaderThree: "Loader permettant de changer le mode en dark and light",
+      loaderFour: "Loader permettant de changer le mode en dark and light",
 
       // Skills
       descriptionSkill:
@@ -160,6 +175,7 @@ const resources = {
       skills: "Compétences",
       contact: "Contact",
       projects: "Projets",
+      myComponent: "Mes composants",
       fullName: "Fotsing Vadiny Pherlin",
 
       // Banner
@@ -177,19 +193,19 @@ const resources = {
       ppCompany0: "Université de Yaoundé",
       ppDescription0:
         "Mise en place d'un planificateur de voyage, révision du code et mentorat des stagiaires.",
-      ppPeriod0: "Février 2024 à Février 2025",
+      ppPeriod0: "Fév 2024 - Fév 2025",
 
       name1: "Front End Developer",
       ppCompany1: "Université de Douala",
       ppDescription1:
         "Analyse et conception de systèmes d'information à l'aide d'une architecture micro-services.",
-      ppPeriod1: "Octobre 2023 à Janvier 2024",
+      ppPeriod1: "Oct 2023 - Jan 2024",
 
       name2: "Web Development Trainer",
       ppCompany2: "Université de Douala",
       ppDescription2:
         "Conception et mise en œuvre de plateformes Web utilisant diverses technologies.",
-      ppPeriod2: "Octobre 2022 à Mai 2023",
+      ppPeriod2: "Oct 2022 - Mai 2023",
 
       // Experience
       descriptionXP:
@@ -199,13 +215,13 @@ const resources = {
       // description0: "Mise en place d’un planificateur de voyages; maintenance, revue de code et mise en place des bonnes pratiques avec l’utilisation de design pattern; Suivi de stagiaires.",
       description0:
         "*Architecture Front-end Complexe : Conception et modélisation complètes de l'application OctopusFX, notamment un planificateur de voyages sophistiqué, en utilisant TypeScript pour la robustesse et Redux pour une gestion d'état prédictive. * Qualité du Code et Maintenabilité : Mise en place des meilleures pratiques (clean code et design patterns) à travers des revues de code systématiques, améliorant significativement la qualité et la performance du Front-end. * Intégration et Déploiement Continu : Contribution active à la gestion des branches et à l'optimisation des pipelines CI/CD sur Azure DevOps, assurant des cycles de déploiement rapides et fiables. * Leadership Technique : Encadrement et mentorat technique de stagiaires, contribuant à l'amélioration de l'efficacité globale de l'équipe de développement",
-      period0: "Février 2024 à Février 2025",
+      period0: "Fév 2024 - Nov 2025",
 
       role1: "Dévélopeur Front End",
       company1: "Klapeers",
       description1:
         "Analyse, modélisation et conception des systèmes d’informations sous architecture micro-service.",
-      period1: "Octobre 2023 à Janvier 2024",
+      period1: "Oct 2023 - Jan 2024",
 
       role2: "Formateur développement web",
       company2:
@@ -213,7 +229,7 @@ const resources = {
       // description2: "Conception et implémentation des plateformes web avec ReactJS, NodeJS, PHP, Firebase",
       description2:
         "Conception Full-Stack : Implémentation de plateformes web complètes depuis le cahier des charges jusqu'au déploiement, utilisant Symfony et NodeJS pour structurer des API RESTful performantes. * Gestion de Bases de Données : Expertise dans l'administration et l'optimisation des systèmes de gestion de bases de données relationnelles (PostgreSQL et MySQL) pour garantir la sécurité et la rapidité des transactions Back-end. * Modélisation et Standardisation : Réalisation de diagrammes UML pour la modélisation précise des systèmes et application de la gestion avancée des dépendances avec npm. * Maîtrise de l'Outillage : Gestion complète des projets et des flux de travail collaboratifs grâce à la maîtrise avancée des branches et des outils Git/GitHub",
-      period2: "Octobre 2022 à Mai 2023",
+      period2: "Oct 2022 - Mai 2023",
 
       // Projets personnels
       pname0: "Hindra-auth",
@@ -232,7 +248,21 @@ const resources = {
       pDescription3:
         "Boutique de vente de vêtements africains 'Afritude' en ligne avec des points de retrait en Europe et en Amerique.",
       pLabelTitle3: "Visiter le site",
+      pname4: "K-Guide",
+      pDescription4:
+        "Informations de differentes entreprises de par le monde à portée de main avec systeme de filtrage basique.",
+      pLabelTitle4: "Visiter le site",
       pLabelTitle: "Visiter le site",
+      archive: "Archivé",
+
+      // Projets personnels
+      theme: "Mode",
+      toggleOne: "Bouton permettant de changer le mode en sombre et clair",
+      toggleTwo: "Switch permettant de changer le mode en sombre et clair",
+      loaderOne: "Chargement permettant de changer le mode en dark and light",
+      loaderTwo: "Chargement permettant de changer le mode en dark and light",
+      loaderThree: "Chargement permettant de changer le mode en dark and light",
+      loaderFour: "Chargement permettant de changer le mode en dark and light",
 
       // Skills
       descriptionSkill:
@@ -285,11 +315,10 @@ const resources = {
 
 // Configuration i18n
 i18n
-  .use(LanguageDetector) // Détecte la langue de l'utilisateur
   .use(initReactI18next) // Initialise avec React
   .init({
     resources,
-    fallbackLng: "fr", // Langue par défaut si non détectée
+    lng: localStorage.getItem(PortfolioConstants.USER_LANGUAGE) || "fr",
     interpolation: {
       escapeValue: false, // React gère déjà l'échappement
     },

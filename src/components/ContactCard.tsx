@@ -67,7 +67,7 @@ export const ContactCard: React.FC<ContactCardProps> = ({ contact }) => {
       ></div>
 
       {/* Content Container */}
-      <div className="relative flex items-center gap-4">
+      <div className="relative flex items-center gap-2">
         {/* Icon Container */}
         <div className="relative flex items-center justify-center">
           <div
@@ -87,7 +87,7 @@ export const ContactCard: React.FC<ContactCardProps> = ({ contact }) => {
 
         {/* Text Container */}
         <div className="flex flex-col gap-1">
-          <span className="text-lg font-bold pt-[0.2rem] tracking-tight leading-none transition-colors duration-300 dark:text-gray-200 dark:group-hover:text-gray-50">
+          <span className="text-lg px-2 font-bold pt-[0.2rem] tracking-tight leading-none transition-colors duration-300 dark:text-gray-200 dark:group-hover:text-gray-50">
             {contact.title?.toLowerCase()?.startsWith("email")
               ? t("email")
               : contact.title?.toLowerCase()?.startsWith("phone")
@@ -108,7 +108,7 @@ export const ContactCard: React.FC<ContactCardProps> = ({ contact }) => {
               ? t("instagram")
               : ""}
           </span>
-          <span className="text-sm truncate underline underline-offset-2 italic text-gray-600 dark:text-gray-400 dark:group-hover:text-gray-200 group-hover:text-gray-900 transition-colors duration-300">
+          <span className="text-sm px-2 truncate underline underline-offset-2 italic text-gray-600 dark:text-gray-400 dark:group-hover:text-gray-200 group-hover:text-gray-900 transition-colors duration-300">
             {contact.value}
           </span>
         </div>

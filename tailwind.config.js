@@ -36,6 +36,10 @@ export default {
       animation: {
         fadeIn: "fadeIn 1s ease-in-out",
         fadeInUp: "fadeInUp 1s ease-in-out",
+
+        'float-slow': 'float 6s ease-in-out infinite',
+        'float-medium': 'float 4s ease-in-out infinite',
+        'float-fast': 'float 2s ease-in-out infinite',
       },
       keyframes: {
         fadeIn: {
@@ -46,6 +50,10 @@ export default {
           "0%": { opacity: 0, transform: "translateY(20px)" },
           "100%": { opacity: 1, transform: "translateY(0)" },
         },
+        float: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-10px)' },
+        }
       },
     },
     screens: {

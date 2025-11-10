@@ -24,7 +24,7 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
         <img
           className={`object-contain w-full h-full max-h-32 hidden md:block`}
           src={experience?.picture}
-          alt={t("company" + idx?.toString())}
+          alt={t("company" + idx?.toString()).split("(")[0].trim()}
         />
         <h5 className="text-lg font-medium tracking-tight italic text-gray-900 dark:text-gray-300 text-opacity-50">
           {t("company" + idx?.toString())}

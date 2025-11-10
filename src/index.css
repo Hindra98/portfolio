@@ -6,7 +6,7 @@
   font-family: 'Two Weekends';
   font-style: normal;
   font-weight: bolder;
-  src: local('Two Weekends'), url('./assets/polices/twoweekendssans-regular.otf') format('otf');
+  src: local('Two Weekends'), url('./assets/polices/twoweekendssans-regular.otf');
 }
 
 @font-face {

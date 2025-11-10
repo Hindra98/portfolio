@@ -55,17 +55,35 @@ export const Header: React.FC = () => {
         <Navbar.Toggle />
       </div>
       <Navbar.Collapse>
-        {["Home", "About", "Experience", "Projects", "Contact"].map(
-          (item, idx) => (
-            <Navbar.Link
-              href={`#${item.toLowerCase()}`}
-              key={idx}
-              className="self-stretch my-auto hover:text-gray-600 dark:hover:text-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
-            >
-              {t(item.toLowerCase())}
-            </Navbar.Link>
-          )
-        )}
+        {[
+          "#Home",
+          "#About",
+          "#Experience",
+          "#Projects",
+          "#Contact",
+          "my-component",
+        ].map((item, idx) => (
+          <Navbar.Link
+            href={`/${item.toLowerCase()}`}
+            key={idx}
+            className="self-stretch my-auto hover:text-gray-600 dark:hover:text-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
+          >
+            {t(
+              item.replace("#","")
+                .toLowerCase()
+                .split("-")
+                .map((it, idx) =>
+                  idx === 0
+                    ? it
+                    : it
+                        .split("")
+                        .map((i, id) => (id > 0 ? i : i.toUpperCase()))
+                        .join("")
+                )
+                .join("")
+            )}
+          </Navbar.Link>
+        ))}
       </Navbar.Collapse>
     </Navbar>
   );

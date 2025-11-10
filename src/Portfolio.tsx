@@ -1,22 +1,16 @@
 import * as React from "react";
-import { Header } from "./components/Header";
 import HeroBanner from "./components/HeroBanner";
 import { ContactUs } from "./components/Contact";
-import { Footer } from "./components/Footer";
 import { Experience } from "./components/Experience";
 import { PersonnalProject } from "./components/PersonnalProject";
 
 export const Portfolio: React.FC = () => {
   return (
-    <div className="flex relative flex-col">
-      <Header />
-      <main className="py-4 px-8">
+      <main className="py-4 px-8" id="home">
         <HeroBanner />
         <Experience />
         <PersonnalProject />
         <ContactUs />
       </main>
-      <Footer />
-    </div>
   );
 };

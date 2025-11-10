@@ -30,6 +30,10 @@ import hindraExchangeLogo from "../assets/img/hindra-auth-logo2.svg";
 import hindraExchangeUrl from "../assets/img/hindra-exchange.jpg";
 import mypageLogo from "../assets/img/my-page-logo.jpeg";
 import mypageUrl from "../assets/img/my-page.jpg";
+import afrochicLogo from "../assets/img/afrochic-logo.jpg";
+import afrochicUrl from "../assets/img/afrochic.jpg";
+import kguideLogo from "../assets/img/kguide-logo.png";
+import kguideUrl from "../assets/img/k-guide.jpg";
 
 export const personnalProject: PersonnalProjectItem[] = [
   {
@@ -63,9 +67,19 @@ export const personnalProject: PersonnalProjectItem[] = [
     name: "Afrochic",
     description:
       "Boutique de vente de vêtements africains 'Afritude' en ligne avec des points de retrait en Europe et en Amerique.",
-    picture: "",
-    logo: "",
+    picture: afrochicUrl,
+    logo: afrochicLogo,
     url: "https://ifpia.xyz",
+    color:"#1e293b",
+    isArchived:true,
+  },
+  {
+    name: "K-Guide",
+    description:
+      "Boutique de vente de vêtements africains 'Afritude' en ligne avec des points de retrait en Europe et en Amerique.",
+    picture: kguideUrl,
+    logo: kguideLogo,
+    url: "https://h-guide.vercel.app/",
     color:"#1e293b",
   },
 ];
