@@ -20,7 +20,7 @@ const LanguageToggle = () => {
   }, [langage, i18n]);
 
   return (
-    <select
+    <select aria-label="Select language"
       onChange={(e) => setLangage(e.target.value)}
       className="p-2 bg-gray-200 dark:bg-gray-800 rounded focus:outline-none cursor-pointer"
     >

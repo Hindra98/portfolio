@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import {
   azure,
   bootstrap,
@@ -133,7 +133,7 @@ export const ExperienceBackground: React.FC<AnimatedBackgroundProps> = ({
   const config = intensityConfig[intensity];
 
   // Définition des différentes animations
-  const getAnimationVariants = (type: number) => {
+  const getAnimationVariants = (type: number):Variants => {
     const baseMovement = config.movement;
 
     switch (type) {
