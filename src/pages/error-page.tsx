@@ -17,9 +17,9 @@ export default function HErrorBoundary(props: React.PropsWithChildren) {
   return (
     <ErrorBoundary
       FallbackComponent={ErrorPage}
-      onError={(error, errorInfo) => {
+      onError={(_, errorInfo) => {
         <div>
-          <p>{error?.message}</p> <p>{errorInfo?.componentStack}</p>
+          <p>{errorInfo?.componentStack}</p>
         </div>;
       }}
     >
