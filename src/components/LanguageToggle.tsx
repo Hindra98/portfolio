@@ -1,36 +1,17 @@
-import { useEffect, useState } from "react";
-import { useTranslation } from "react-i18next";
-import "../locales/i18n"; // Import du fichier de configuration
-import { PortfolioConstants } from "./constants";
+import { Globe } from "lucide-react";
+import { useI18n } from "../lib/i18n";
 
 const LanguageToggle = () => {
-  const { t, i18n } = useTranslation();
-
-  const [langage, setLangage] = useState<string>(
-    () => localStorage.getItem(PortfolioConstants.USER_LANGUAGE) || "fr"
-  );
-
-  useEffect(() => {
-    i18n.changeLanguage(langage);
-    document.documentElement.lang = langage;
-    // window.document.documentElement.lang = langage;
-    
-    console.log(document.documentElement.lang)
-    localStorage.setItem(PortfolioConstants.USER_LANGUAGE, langage);
-  }, [langage, i18n]);
-
+  const { lang, setLang } = useI18n();
   return (
-    <select aria-label="Select language"
-      onChange={(e) => setLangage(e.target.value)}
-      className="p-2 bg-gray-200 dark:bg-gray-800 rounded focus:outline-none cursor-pointer"
+    <button
+      onClick={() => setLang(lang === "fr" ? "en" : "fr")}
+      className="flex items-center gap-1.5 px-2.5 py-1.5 text-xs font-mono font-semibold rounded-md hover:bg-secondary transition cursor-pointer uppercase"
+      aria-label="Switch language"
     >
-      <option value="en" selected={langage === "en"}>
-        {t("english")}
-      </option>
-      <option value="fr" selected={langage === "fr"}>
-        {t("french")}
-      </option>
-    </select>
+      <Globe className="h-3.5 w-3.5" />
+      {lang}
+    </button>
   );
 };
 

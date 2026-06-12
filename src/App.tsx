@@ -1,26 +1,32 @@
 import { lazy } from "react";
-import { Portfolio } from "./Portfolio";
 import "./assets/fontello/css/fontello.css";
-import "./App.css";
+import "./styles.css";
 import {
   createBrowserRouter,
   createRoutesFromElements,
   Route,
 } from "react-router-dom";
-import PageNotFound from "./pages/page-not-found";
+import NotFoundComponent from "./pages/page-not-found";
+import { ErrorComponent } from "./pages/error-page";
 
-const AppLayout = lazy(() => import("./layouts/AppLayout"));
-const MyComponent = lazy(() => import("./components/my-components/index"));
+const AppLayout = lazy(() => import("./components/layout/AppLayout"));
+const ContactPage = lazy(() => import("./pages/contact"));
+const ComponentsPage = lazy(() => import("./pages/components"));
+const ProjectsPage = lazy(() => import("./pages/projects"));
+const HomePage = lazy(() => import("./pages/index"));
 
 export const router = createBrowserRouter(
   createRoutesFromElements(
     <>
-      <Route path="/" element={<AppLayout />}>
-        <Route index element={<Portfolio />} />
-        <Route path="/my-component" element={<MyComponent/>} />
+      <Route path="/" element={<AppLayout />} errorElement={<ErrorComponent/>}>
+        <Route index element={<HomePage />} />
+        <Route path="/home" element={<HomePage/>} />
+        <Route path="/projects" element={<ProjectsPage/>} />
+        <Route path="/components" element={<ComponentsPage/>} />
+        <Route path="/contact" element={<ContactPage/>} />
       </Route>
 
-      <Route path="*" element={<PageNotFound />} />
+      <Route path="*" element={<NotFoundComponent />} />
     </>
   )
 );
