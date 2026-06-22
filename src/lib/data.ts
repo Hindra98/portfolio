@@ -23,7 +23,7 @@ export const skills = {
 export const experiences = [
   {
     company: "NextGet Consulting",
-    url: "https://about.me/nextget-consulting",
+    url: "https://nextget-consulting.vercel.app/",
     role: { fr: "Développeur ReactJS", en: "ReactJS Developer" },
     period: { fr: "Fév. 2024 — Juin 2026", en: "Feb 2024 — June 2026" },
     bullets: {
