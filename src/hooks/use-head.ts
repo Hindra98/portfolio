@@ -56,8 +56,8 @@ export function useHead({
     };
   }, [
     title,
-    meta,
-    link,
-    // JSON.stringify(meta), JSON.stringify(link)
+    // meta,
+    // link,
+    JSON.stringify(meta), JSON.stringify(link)
   ]);
 }
