@@ -11,7 +11,7 @@ const fr: Dict = {
   "nav.contact": "Contact",
   "nav.cv": "CV",
 
-  "hero.tag": "Développeur Web · Cameroun",
+  "hero.tag": "Analyste Développeur Fullstack · Cameroun",
   "hero.title": "Je conçois des interfaces",
   "hero.title2": "performantes & vivantes.",
   "hero.subtitle": "Développeur ReactJS / TypeScript avec 3+ ans d'expérience sur des applications web complexes et des progiciels métier (ERP logistique, plateformes sociales, e-commerce).",
@@ -93,7 +93,7 @@ const en: Dict = {
   "nav.contact": "Contact",
   "nav.cv": "Resume",
 
-  "hero.tag": "Web Developer · Cameroon",
+  "hero.tag": "Full-Stack Developer Analyst · Cameroon",
   "hero.title": "I build interfaces that are",
   "hero.title2": "fast & alive.",
   "hero.subtitle": "ReactJS / TypeScript developer with 3+ years of experience building complex web apps and business software (logistics ERP, social platforms, e-commerce).",
