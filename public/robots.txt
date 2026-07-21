@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://portfolio-hindra98.vercel.app/sitemap.xml
+
+# Block sensitive paths (example)
+Disallow: /admin/
+Disallow: /private/
